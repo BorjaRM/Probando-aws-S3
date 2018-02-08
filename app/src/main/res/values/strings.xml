@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">videorecorder</string>
+    <string name="btnSubir">Subir video guardado a S3</string>
+    <string name="btnGuardar">Grabar y subir video a S3</string>
+    <string name="btnCancelar">Cancelar subida</string>
+
+
+    <string name="upload_activity">UploadActivity</string>
+    <string name="download_selection_activity">Select a file from the bucket</string>
+    <string name="upload">Upload</string>
+    <string name="refreshing">Refreshing</string>
+    <string name="please_wait">Please wait</string>
+
+</resources>
