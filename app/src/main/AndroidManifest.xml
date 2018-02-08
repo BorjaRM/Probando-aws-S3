@@ -26,9 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.borja.videorecorder.other"
-            android:label="other" />
+        <activity android:name=".VideoViewActivity"></activity>
+        <activity android:name=".other"></activity>
         <service
             android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
             android:enabled="true" />

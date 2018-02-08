@@ -3,7 +3,7 @@
     <string name="app_name">videorecorder</string>
     <string name="btnSubir">Subir video guardado a S3</string>
     <string name="btnGuardar">Grabar y subir video a S3</string>
-    <string name="btnCancelar">Cancelar subida</string>
+    <string name="btnReproducir">Reproducir video</string>
 
 
     <string name="upload_activity">UploadActivity</string>

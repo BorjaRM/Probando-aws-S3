@@ -96,7 +96,7 @@ public class Util {
      * @param bytes number of bytes to be converted.
      * @return A string that represents the bytes in a proper scale.
      */
-    public static String getBytesString(long bytes) {
+    /*public static String getBytesString(long bytes) {
         String[] quantifiers = new String[] {
                 "KB", "MB", "GB", "TB"
         };
@@ -110,18 +110,18 @@ public class Util {
                 return String.format("%.2f", speedNum) + " " + quantifiers[i];
             }
         }
-    }
+    }*/
 
     /**
      * Copies the data from the passed in Uri, to a new file for use with the
      * Transfer Service
      * 
-     * @param context
-     * @param uri
+     * //@param context
+     * //@param uri
      * @return
      * @throws IOException
      */
-    public static File copyContentUriToFile(Context context, Uri uri) throws IOException {
+    /*public static File copyContentUriToFile(Context context, Uri uri) throws IOException {
         InputStream is = context.getContentResolver().openInputStream(uri);
         File copiedData = new File(context.getDir("SampleImagesDir", Context.MODE_PRIVATE), UUID
                 .randomUUID().toString());
@@ -138,23 +138,20 @@ public class Util {
         fos.close();
 
         return copiedData;
-    }
+    }*/
 
     /*
      * Fills in the map with information in the observer so that it can be used
      * with a SimpleAdapter to populate the UI
      */
-    public static void fillMap(Map<String, Object> map, TransferObserver observer, boolean isChecked) {
-        int progress = (int) ((double) observer.getBytesTransferred() * 100 / observer
-                .getBytesTotal());
+    /*public static void fillMap(Map<String, Object> map, TransferObserver observer, boolean isChecked) {
+        int progress = (int) ((double) observer.getBytesTransferred() * 100 / observer.getBytesTotal());
         map.put("id", observer.getId());
         map.put("checked", isChecked);
         map.put("fileName", observer.getAbsoluteFilePath());
         map.put("progress", progress);
-        map.put("bytes",
-                getBytesString(observer.getBytesTransferred()) + "/"
-                        + getBytesString(observer.getBytesTotal()));
+        map.put("bytes", getBytesString(observer.getBytesTransferred()) + "/" + getBytesString(observer.getBytesTotal()));
         map.put("state", observer.getState());
         map.put("percentage", progress + "%");
-    }
+    }*/
 }

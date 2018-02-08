@@ -26,11 +26,11 @@
             android:text="@string/btnSubir" />
 
         <Button
-            android:id="@+id/btnCancel"
+            android:id="@+id/btnReproducir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/btnCancelar" />
+            android:text="@string/btnReproducir" />
 
     </LinearLayout>
 
